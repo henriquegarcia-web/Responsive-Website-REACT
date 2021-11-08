@@ -24,7 +24,7 @@ export const Container = styled.div`
 export const MainHeading = styled.h1`
   font-size: clamp(2.3rem, 6vw, 4.5rem);
   margin-bottom: 2rem;
-  color: ${({ inverse }) = (inverse ? '$403ae3' : '#fff')};
+  color: ${({ inverse }) => (inverse ? '$403ae3' : '#fff')};
   width: 100%;
   letter-spacing: 4px;
   text-align: center;
@@ -32,14 +32,14 @@ export const MainHeading = styled.h1`
 
 export const Heading = styled.h2`
   font-size: clamp(1.3rem, 13vw, 3.1rem);
-  margin: ${({ margin }) = (margin ? margin : '')};
-  margin-bottom: ${({ mb }) = (mb ? mb : '')};
-  margin-top: ${({ mt }) = (mt ? mt : '')};
-  color: ${({ inverse }) = (inverse ? '$403ae3' : '#fff')};
+  margin: ${({ margin }) => (margin ? margin : '')};
+  margin-bottom: ${({ mb }) => (mb ? mb : '')};
+  margin-top: ${({ mt }) => (mt ? mt : '')};
+  color: ${({ inverse }) => (inverse ? '$403ae3' : '#fff')};
   letter-spacing: 0.4rem;
   line-height: 1.06;
   text-align: center;
-  width: ${({ width }) = (width ? width : '100%')};
+  width: ${({ width }) => (width ? width : '100%')};
 `
 
 export const TextWrapper = styled.span`

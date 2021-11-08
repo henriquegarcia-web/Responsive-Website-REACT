@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import GlobalStyle from './globalStyles';
 import Home from './pages/Home';
@@ -11,11 +11,11 @@ function App() {
     <Router>
       <GlobalStyle />
 
-      <Switch>
-        <Route path='/' exact component={ Home } />
-        <Route path='/' exact component={ PricingPage } />
-        <Route path='/' exact component={ SignupPage } />
-      </Switch>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/services" exact element={<PricingPage/>} />
+        <Route path="/signup" exact element={<SignupPage/>} />
+      </Routes>
     </Router>
   );
 }
